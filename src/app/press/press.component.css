@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 55px 7%;
+  background-color: white;
+  border-top: 1px solid rgb(231,232,234);
+  border-bottom: 1px solid rgb(231,232,234);
+}
+
+img {
+  padding: 20px;
+  margin: auto 15px;
+}

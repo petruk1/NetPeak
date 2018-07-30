@@ -1,0 +1,53 @@
+<div class="pricing-info">
+  <h2 class="pricing-title"><span>Choose</span> your plan</h2>
+  <p class="pricing-description">This sounded nonsense to Alice, so she said
+    nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found
+    herself walking.</p>
+  <div class="pricing-form">
+      <div class="pricing-type-license">
+        <label>Select the number of licenses:
+        </label>
+        <select class="form-control"
+                #licenseSelection
+                (change)="onLicenseCountChange(licenseSelection.value)"
+                >
+          <option *ngFor="let l of licenses" [value]="l.discount">{{l.count}}</option>
+        </select>
+      </div>
+
+      <div class="pricing-promo-code">
+        <label>Enter the promo code:</label>
+        <div>
+          <input #promo
+                 class="form-control"
+                 placeholder="Promo code">
+          <button (click)="onApply(promo.value)">Apply</button>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="plans-container">
+  <div class="default-plan-container plan-1">
+    <h3 class="plan-title">PROFESSIONAL</h3>
+    <span class="price">{{price}}$</span>
+    <ul class="features-list">
+      <li class="feature-point">Hundreds of elements</li>
+      <li class="feature-point">Style guide</li>
+      <li class="feature-point">160 icons included</li>
+      <li class="feature-point">Sketch file</li>
+      <li class="feature-point">Commercial license</li>
+    </ul>
+    <button class="default-plan-btn">Buy Now</button>
+  </div>
+  <div class="default-plan-container plan-2">
+    <h3 class="plan-title">STARTER</h3>
+    <span class="price">Free</span>
+    <ul class="features-list grey-text">
+      <li class="feature-point">Hundreds of elements</li>
+      <li class="feature-point">Style guide</li>
+      <li class="feature-point">30 icons included</li>
+      <li class="feature-point">Professional license</li>
+    </ul>
+    <button class="default-plan-btn">Get Free</button>
+  </div>
+</div>

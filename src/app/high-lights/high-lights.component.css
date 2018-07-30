@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 249, 250);
+  align-items: center;
+  padding: 100px 7%;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1.4;
+}
+
+.isSelected{
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+.tablet {
+  flex: 1;
+}
+
+.tablet-img-placeholder {
+  background: url('../../assets/images/HighLights-Tablet1-empty.png') no-repeat;
+  background-size: 440px 600px;
+  max-width: 450px;
+  min-height: 600px;
+}
+
+.tablet-img-placeholder img {
+  left: 17px;
+  top: 55px;
+  position: relative;
+  max-width: 405px;
+  max-height: 488px;
+  min-width: 405px;
+  min-height: 488px;
+  border-radius: 5px;
+}

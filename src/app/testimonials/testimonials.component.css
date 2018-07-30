@@ -1,0 +1,101 @@
+:host {
+  display: flex;
+  background-color: rgb(248, 249, 250);
+  border-bottom: 1px solid rgba(231, 232, 234, 1);
+}
+
+.title {
+  font-family: nunito-light, serif;
+  font-weight: normal;
+  padding-top: 30px;
+}
+
+.actions {
+  flex: 1;
+  background-color: white;
+  padding: 100px 7%;
+}
+
+.title span {
+  display: block;
+  font-family: nunito-bold, serif;
+}
+
+.reviews {
+  padding-top: 210px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews p {
+  font-family: nunito-bold, serif;
+  color: rgb(153, 158, 168);
+}
+
+.reviews span {
+  font-family: nunito-extra-bold, serif;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.arrow::before {
+  content: url("../../assets/images/Testimonials-Arrow-Icon.png");
+  margin-right: 10px;
+}
+
+.feedbacks-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2.5;
+  padding: 100px 7%;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.feedback-content {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid rgb(231, 232, 234);
+  line-height: 25px;
+}
+
+.feedback-comment {
+  font-family: nunitosans-italic, serif;
+  padding-left: 10px;
+  margin-top: 0;
+}
+
+.about-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.about-author p {
+  font-family: nunito-regular, serif;
+  color: rgb(182, 186, 192);
+  margin: 0;
+}
+
+.author-name {
+  font-family: nunito-bold, serif;
+}
+
+.revers-text {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.revers-feedback {
+  align-self: flex-end;
+}

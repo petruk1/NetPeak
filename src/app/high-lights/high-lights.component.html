@@ -1,0 +1,11 @@
+<div class="tabs-container">
+  <app-tab  *ngFor="let tab of tabs" [tabData]="tab"
+            [class.isSelected]="tab===selectedTab"
+            (click)="selectedTab=tab"></app-tab>
+
+</div>
+<div class="tablet">
+  <div class="tablet-img-placeholder">
+    <img src="{{selectedTab?.image}}" alt="tablet">
+  </div>
+</div>

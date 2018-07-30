@@ -1,0 +1,126 @@
+:host {
+  display: block;
+  background: rgb(248, 249, 250) url("../../assets/images/Background.png") no-repeat;
+  background-size: 100% 90%;
+  padding: 25px 135px 0 135px;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-logo {
+  font-size: 24px;
+  font-family: nunito-extra-bold, serif;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-family: nunito-regular, serif;
+  margin: 0;
+}
+
+.menu li {
+  font-family: nunitosans-regular, serif;
+  margin: 0 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.menu img {
+  width: 16px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.menu button {
+  font-family: nunitosans-bold, serif;
+  padding: 10px 13px;
+  margin: 0 30px 0 15px;
+  border: none;
+  cursor: pointer;
+  width: 132px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+}
+
+.intro {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.img-logo {
+  align-self: flex-start;
+  margin-left: -10px;
+}
+
+.slogan {
+  width: 555px;
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 300;
+  font-family: nunitosans-light, serif;
+  line-height: 1.43;
+  letter-spacing: 1px;
+}
+
+.slogan span {
+  font-family: nunitosans-extra-bold, serif;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  font-family: nunitosans-bold, serif;
+}
+
+.actions button {
+  font-family: inherit;
+  font-size: 18px;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+  width: 144px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+}
+
+.actions button:first-child {
+  width: 167px;
+  height: 50px;
+  border-radius: 6px;
+  background-image: linear-gradient(107deg, #ff8e64, #ffe641);
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+  color: white;
+  margin-right: 20px;
+}
+
+.header-content {
+  display: flex;
+  position: relative;
+  top: 50px;
+  justify-content: space-between;
+}
+
+.tablet {
+  width: 470px;
+  margin-right: 70px;
+}

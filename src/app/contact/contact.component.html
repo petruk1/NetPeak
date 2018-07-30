@@ -1,0 +1,61 @@
+<h2 class="title"><span>Stay</span> in touch</h2>
+<p class="description">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To
+  her surprise, she lost sight of her in a moment.</p>
+<form (ngSubmit)="submit()" class="form box-shadow-standard" #contactForm="ngForm">
+  <div class="form-group">
+    <input type="text"
+           class="form-control"
+           required
+           [(ngModel)]="contactData.name"
+           name="name"
+           placeholder="Your Name">
+    <input type="email"
+           required
+           class="form-control"
+           [(ngModel)]="contactData.email"
+           name="email"
+           #email="ngModel"
+           email
+           placeholder="Your Email">
+  </div>
+
+
+  <div class="form-group">
+    <select class="form-control"
+            #countrySel
+            (change)="selectedCountryChanged(countrySel.value)"
+            [(ngModel)]="contactData.country"
+            name="country">
+      <option disabled selected hidden>Country</option>
+      <option class="grey-text"
+              *ngFor="let country of countries"
+              [value]="country.name">
+        {{country.name}}
+
+      </option>
+    </select>
+    <select class="form-control"
+            #citySel
+            (change)="selectedCityChanged(citySel.value)"
+            [disabled]="!selectedCountry"
+            [(ngModel)]="contactData.city"
+            name="city">
+      <option disabled selected hidden>City</option>
+      <option
+        *ngFor="let city of selectedCountry?.cities">
+        {{city}}
+      </option>
+    </select>
+  </div>
+  <div class="form-group">
+  <textarea
+    [(ngModel)]="contactData.message"
+    name="message"
+    class="form-control"
+    required
+    minlength="10"
+    cols="30" rows="10"
+    placeholder="Message..."></textarea>
+  </div>
+  <button [disabled]="contactForm.invalid" class="send-btn">Send Message</button>
+</form>

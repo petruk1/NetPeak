@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  padding: 50px 7%;
+  background: url('../../assets/images/Header-Background.png') no-repeat;
+  background-size: 100% 500px;
+  color: white;
+}
+
+.text-content {
+  flex: 1.2;
+}
+
+.text-content-title {
+  font-family: nunito-light, serif;
+  font-weight: normal;
+}
+
+.text-content-title span {
+  font-family: nunito-extra-bold, serif;
+}
+
+.text-content-description {
+  font-family: nunito-regular, serif;
+  line-height: 30px;
+}
+
+.actions {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.actions button {
+  border: none;
+  border-radius: 5px;
+  padding: 15px 40px;
+  font-family: nunito-bold, serif;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background: url("../../assets/images/intro-gradient-btn-base.png") center no-repeat;
+  background-size: 100% 100%;
+  margin-right: 20px;
+  color: white;
+}

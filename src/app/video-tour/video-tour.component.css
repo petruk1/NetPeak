@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 7%;
+  background: url('../../assets/images/Video-Tour-Background.png') center;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.title {
+  font-family: nunito-light, serif;
+  font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+}
+
+.title span {
+  font-family: nunito-bold, serif;
+}
+
+.description {
+  text-align: center;
+  width: 600px;
+  font-family: nunito-regular, serif;
+  line-height: 30px;
+}
+
+img:hover {
+  cursor: pointer;
+}

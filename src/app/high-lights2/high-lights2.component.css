@@ -1,7 +1,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  padding: 100px 7%;
+  padding: 120px 135px;
   background-color: rgb(248, 249, 250);
 }
 
@@ -12,7 +12,9 @@
 
 .image-wrapper {
   background: url("../../assets/images/Highlight-2-Background1.png");
-  background-size: 100%;
+  width: 585px;
+  height: 590px;
+  background-size: 100% 100%;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -21,7 +23,7 @@
 }
 
 .image-wrapper img {
-  width: 50%;
+  width: 80%;
   position: relative;
   top: 15%;
 }
@@ -45,9 +47,10 @@
 .text-content-title {
   font-family: nunito-light, serif;
   font-weight: normal;
-  font-size: 30px;
-  width: 310px;
-  margin-bottom: 0;
+  font-size: 35px;
+  line-height: 1.43;
+  width: 370px;
+  margin-bottom: 17px;
 }
 
 .text-content-title span {
@@ -56,5 +59,6 @@
 
 .text-content-description {
   font-family: nunito-regular, serif;
-  line-height: 30px;
+  line-height: 1.88;
+  font-size: 16px;
 }

@@ -1,7 +1,7 @@
 <h2 class="title"><span>Stay</span> in touch</h2>
 <p class="description">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To
   her surprise, she lost sight of her in a moment.</p>
-<form (ngSubmit)="submit()" class="form box-shadow-standard" #contactForm="ngForm">
+<form (ngSubmit)="submit();" class="form box-shadow-standard" #contactForm="ngForm">
   <div class="form-group">
     <input type="text"
            class="form-control"
@@ -27,8 +27,7 @@
             [(ngModel)]="contactData.country"
             name="country">
       <option disabled selected hidden>Country</option>
-      <option class="grey-text"
-              *ngFor="let country of countries"
+      <option *ngFor="let country of countries"
               [value]="country.name">
         {{country.name}}
 

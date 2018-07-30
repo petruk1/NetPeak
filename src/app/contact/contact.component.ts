@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {DataService} from "../data.service";
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +9,7 @@ import {DataService} from "../data.service";
 
 export class ContactComponent implements OnInit {
   countries;
-  selectedCountry = null;
+  selectedCountry;
   contactData = {
     name: '',
     email: '',
@@ -21,18 +21,28 @@ export class ContactComponent implements OnInit {
   constructor(private dataService: DataService) {
   }
 
-  submit() {
+  submit(): void {
     this.contactData.city = this.contactData.city === 'City' ? '' : this.contactData.city;
     this.contactData.country = this.contactData.country === 'Country' ? '' : this.contactData.country;
+
+    console.log('Datas from contact form: ', this.contactData);
+
+    this.contactData = {
+      name: '',
+      email: '',
+      message: '',
+      country: 'Country',
+      city: 'City'
+    };
   }
 
-  selectedCountryChanged(name) {
+  selectedCountryChanged(name): void {
     this.selectedCountry = this.countries.filter(c => c.name === name)[0];
     this.contactData.country = name;
     this.contactData.city = this.selectedCountry.cities[0];
   }
 
-  selectedCityChanged(name) {
+  selectedCityChanged(name): void {
     this.contactData.city = name;
   }
 

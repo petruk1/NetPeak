@@ -1,24 +1,27 @@
 :host{
-  width: 500px;
   margin-bottom: 2px;
+  width: 470px;
+  height: 160px;
 }
 
 .tab {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 500px;
   padding: 25px 25px 0;
 }
 
 .tab-text-content {
   margin-left: 20px;
-  justify-content: flex-start;
 }
 
 .tab-title {
-  margin: 0 0 10px 0;
+  margin: 4px 0 10px 0;
   font-family: nunito-light, serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: normal;
 }
 
 .tab-title span {
@@ -27,7 +30,11 @@
 
 .tab-description {
   font-family: nunito-regular, serif;
-  line-height: 23px;
+  width: 366px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.79;
 }
 
 :host:not(.isSelected):hover{

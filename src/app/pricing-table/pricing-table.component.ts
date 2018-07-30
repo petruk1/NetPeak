@@ -17,7 +17,7 @@ export class PricingTableComponent {
     this.price = this.price - this.price * discount;
   }
 
-  onApply(promo) {
+  onApplyPromo(promo):void {
     this.price = 10;
     if (promo === 'Test') {
       this.price *= .5;

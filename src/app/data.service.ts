@@ -25,7 +25,7 @@ const MOCK_TABS_DATA = [{
         Queen. To her surprise, she lost sight of her in a moment`,
   image: '../../assets/images/Smiling-homeowners-600x600.jpg'
 }, {
-  icon: '../../assets/images/Highlight-Reload-Icon.png',
+  icon: '../../assets/images/Highlight-Clock-Icon.png',
   title: {
     highlighted: 'Track',
     another: ' your time'

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataService} from '../data.service';
 
 @Component({
@@ -7,9 +7,9 @@ import {DataService} from '../data.service';
   styleUrls: ['./high-lights.component.css']
 })
 export class HighLightsComponent implements OnInit {
-
   tabs: any[];
   selectedTab: object;
+
   constructor(private dataService: DataService) {
   }
 

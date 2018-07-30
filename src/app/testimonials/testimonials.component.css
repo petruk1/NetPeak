@@ -13,29 +13,35 @@
 .actions {
   flex: 1;
   background-color: white;
-  padding: 100px 7%;
+  padding: 144px 90px 144px 135px;
 }
 
 .title span {
   display: block;
+  width: 285px;
   font-family: nunito-bold, serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 1px;
 }
 
 .reviews {
   padding-top: 210px;
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
 .reviews p {
   font-family: nunito-bold, serif;
-  color: rgb(153, 158, 168);
+  color: #999ea8;
 }
 
 .reviews span {
   font-family: nunito-extra-bold, serif;
   cursor: pointer;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .arrow::before {
@@ -46,14 +52,15 @@
 .feedbacks-container {
   display: flex;
   flex-direction: column;
-  flex: 2.5;
-  padding: 100px 7%;
+  flex: 3;
+  padding: 120px 100px 120px 80px;
 }
 
 .feedback {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 570px;
+  height: 160px;
   background-color: white;
   border-radius: 10px;
   padding: 20px 20px;
@@ -70,7 +77,8 @@
 
 .feedback-comment {
   font-family: nunitosans-italic, serif;
-  padding-left: 10px;
+  width: 460px;
+  padding-left: 20px;
   margin-top: 0;
 }
 
@@ -93,7 +101,7 @@
 
 .revers-text {
   text-align: right;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .revers-feedback {

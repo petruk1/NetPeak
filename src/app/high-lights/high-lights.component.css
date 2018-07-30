@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: rgb(248, 249, 250);
   align-items: center;
-  padding: 100px 7%;
+  padding: 121px 135px;
 }
 
 .tabs-container {
@@ -12,7 +12,7 @@
   flex: 1.4;
 }
 
-.isSelected{
+.isSelected {
   cursor: pointer;
   background-color: white;
   border-radius: 10px;
@@ -25,18 +25,18 @@
 
 .tablet-img-placeholder {
   background: url('../../assets/images/HighLights-Tablet1-empty.png') no-repeat;
-  background-size: 440px 600px;
-  max-width: 450px;
-  min-height: 600px;
+  background-size: 470px 708px;
+  min-width: 470px;
+  min-height: 708px;
 }
 
 .tablet-img-placeholder img {
-  left: 17px;
-  top: 55px;
+  left: 18px;
+  top: 65px;
   position: relative;
-  max-width: 405px;
-  max-height: 488px;
-  min-width: 405px;
-  min-height: 488px;
+  max-width: 435px;
+  max-height: 578px;
+  min-width: 435px;
+  min-height: 578px;
   border-radius: 5px;
 }

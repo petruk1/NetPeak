@@ -1,6 +1,6 @@
 :host {
   display: flex;
-  padding: 50px 7%;
+  padding: 73px 135px 80px 135px;
   background: url('../../assets/images/Header-Background.png') no-repeat;
   background-size: 100% 500px;
   color: white;
@@ -13,6 +13,7 @@
 .text-content-title {
   font-family: nunito-light, serif;
   font-weight: normal;
+  margin-bottom: 17px;
 }
 
 .text-content-title span {
@@ -33,15 +34,21 @@
 
 .actions button {
   border: none;
-  border-radius: 5px;
   padding: 15px 40px;
   font-family: nunito-bold, serif;
   cursor: pointer;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
 }
 
 .actions button:first-child {
-  background: url("../../assets/images/intro-gradient-btn-base.png") center no-repeat;
-  background-size: 100% 100%;
+  width: 170px;
+  height: 50px;
+  border-radius: 6px;
+  background-image: linear-gradient(106deg, #ff8e64, #ffe641);
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
   margin-right: 20px;
   color: white;
 }

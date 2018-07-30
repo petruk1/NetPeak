@@ -1,6 +1,6 @@
 :host {
   display: flex;
-  padding: 80px 7%;
+  padding: 120px 135px;
   background-color: rgb(248, 249, 250);
 }
 
@@ -13,8 +13,13 @@
 
 .pricing-title {
   font-family: nunito-light, serif;
-  font-weight: normal;
-  font-size: 36px;
+  width: 370px;
+  height: 50px;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #282b31;
 }
 
 .pricing-title span {
@@ -23,10 +28,13 @@
 
 .pricing-description {
   font-family: nunito-regular, serif;
-  width: 400px;
-  line-height: 30px;
   margin-top: 10px;
-  color: rgb(103, 108, 117);
+  width: 370px;
+  height: 120px;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: #676c75;
 }
 
 .plans-container {
@@ -62,29 +70,34 @@
 
 .default-plan-btn {
   font-family: nunito-bold, serif;
-  font-size: 24px;
+  font-size: 17px;
   border: none;
   border-radius: 5px;
-  padding: 10px 70px;
   color: white;
   cursor: pointer;
 }
 
 .plan-1 button {
-  background: url("../../assets/images/intro-gradient-btn-base.png") center;
-  background-size: 100% 100%;
+  width: 230px;
+  height: 50px;
+  border-radius: 6px;
+  background-image: linear-gradient(101deg, #ff8e64, #ffe641);
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
 }
 
 .plan-2 button {
-  background: url("../../assets/images/Pricing-Table-Base1.png") center;
-  background-size: 100% 100%;
+  width: 235px;
+  height: 50px;
+  border-radius: 6px;
+  background-image: linear-gradient(102deg, #009fc5, #3cecb0);
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
 }
 
 .plan-title {
   font-family: nunito-extra-bold, serif;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(248, 249, 250, .1);
+  background-color: rgba(255, 255, 255, 0.07);
   border-top: 1px solid rgba(231, 232, 234, 1);
   border-bottom: 1px solid rgba(231, 232, 234, 1);
   width: 100%;
@@ -96,7 +109,7 @@
 .features-list {
   list-style: none;
   align-self: flex-start;
-  padding-left: 65px;
+  padding-left: 50px;
   font-size: 20px;
   margin-bottom: 20px;
   font-family: nunito-regular, serif;
@@ -128,12 +141,13 @@
 .pricing-type-license select {
   width: 100px;
   padding: 5px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .pricing-promo-code div {
   display: flex;
   justify-content: space-between;
+  width: 360px;
 }
 
 .pricing-promo-code input {
@@ -147,13 +161,15 @@
   font-family: inherit;
   padding: 5px 25px;
   margin-left: 20px;
-  border-radius: 5px;
   border: none;
   cursor: pointer;
   color: white;
-  background: url('../../assets/images/Pricing-Table-Mask.png') center no-repeat;
-  background-size: 100% 100%;
   flex: 1;
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  background-image: linear-gradient(107deg, #7956ec, #2fb9f8);
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
 }
 
 .pricing-form {

@@ -4,26 +4,26 @@
     nothing, but set off at once toward the Red Queen. To her surprise, she lost sight of her in a moment, and found
     herself walking.</p>
   <div class="pricing-form">
-      <div class="pricing-type-license">
-        <label>Select the number of licenses:
-        </label>
-        <select class="form-control"
-                #licenseSelection
-                (change)="onLicenseCountChange(licenseSelection.value)"
-                >
-          <option *ngFor="let l of licenses" [value]="l.discount">{{l.count}}</option>
-        </select>
-      </div>
+    <div class="pricing-type-license">
+      <label>Select the number of licenses:
+      </label>
+      <select class="form-control"
+              #licenseSelection
+              (change)="onLicenseCountChange(licenseSelection.value)"
+      >
+        <option *ngFor="let l of licenses" [value]="l.discount">{{l.count}}</option>
+      </select>
+    </div>
 
-      <div class="pricing-promo-code">
-        <label>Enter the promo code:</label>
-        <div>
-          <input #promo
-                 class="form-control"
-                 placeholder="Promo code">
-          <button (click)="onApply(promo.value)">Apply</button>
-        </div>
+    <div class="pricing-promo-code">
+      <label>Enter the promo code:</label>
+      <div>
+        <input #promo
+               class="form-control"
+               placeholder="Promo code">
+        <button (click)="onApplyPromo(promo.value)">Apply</button>
       </div>
+    </div>
   </div>
 </div>
 <div class="plans-container">

@@ -11,7 +11,9 @@
 .title {
   font-family: nunito-light, serif;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 35px;
+  letter-spacing: 1px;
+
 }
 
 .title span {
@@ -19,30 +21,52 @@
 }
 
 .description {
-  width: 600px;
   text-align: center;
   margin: 0 auto;
   line-height: 30px;
+  width: 570px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  border-radius: 10px;
+  margin-top: 60px;
   padding: 50px 70px 40px;
-  background-color: white;
+  width: 770px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 24px 0 rgba(40, 43, 49, 0.16);
 }
 
 .form div {
   display: flex;
   justify-content: space-between;
-  width: 570px;
+  width: 630px;
 }
 
 select, input {
-  width: 277px;
+  width: 305px;
+  height: 50px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #b9bdc3;
+}
+
+textarea {
+  height: 160px;
 }
 
 .ng-untouched[required] {
@@ -53,23 +77,15 @@ select, input {
   border-left: 3px solid #a94442; /* red */
 }
 
-.text-field {
-  border: 1px solid rgb(231, 232, 234);
-  border-radius: 5px;
-  background-color: rgb(248, 249, 250);
-  font-size: 18px;
-  font-family: nunitosans-regular, serif;
-}
-
 .send-btn {
   font-family: nunito-bold, serif;
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 10px;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
   color: white;
   cursor: pointer;
-  background: url("../../assets/images/intro-gradient-btn-base.png") center;
-  background-size: 100% 100%;
+  width: 164px;
+  height: 50px;
+  border-radius: 6px;
+  background-image: linear-gradient(107deg, #ff8e64, #ffe641);
+  box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
 }

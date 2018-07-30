@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.box-shadow-standard{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@font-face {
+  font-family: nunito-extra-bold;
+  src: url('assets/fonts/Nunito-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: nunito-regular;
+  src: url('assets/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: nunito-light;
+  src: url('assets/fonts/Nunito-Light.ttf');
+}
+
+@font-face {
+  font-family: nunito-bold;
+  src: url('assets/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: nunitosans-italic;
+  src: url('assets/fonts/NunitoSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: nunitosans-regular;
+  src: url('assets/fonts/NunitoSans-Regular.ttf');
+}
+@font-face {
+  font-family: nunitosans-bold;
+  src: url('assets/fonts/NunitoSans-Bold.ttf');
+}
+@font-face {
+  font-family: nunitosans-light;
+  src: url('assets/fonts/NunitoSans-Light.ttf');
+}
+@font-face {
+  font-family: nunitosans-extra-bold;
+  src: url('assets/fonts/NunitoSans-ExtraBold.ttf');
+}

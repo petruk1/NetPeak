@@ -1,0 +1,39 @@
+:host{
+  width: 500px;
+  margin-bottom: 2px;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 500px;
+  padding: 25px 25px 0;
+}
+
+.tab-text-content {
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+
+.tab-title {
+  margin: 0 0 10px 0;
+  font-family: nunito-light, serif;
+}
+
+.tab-title span {
+  font-family: nunito-extra-bold, serif;
+}
+
+.tab-description {
+  font-family: nunito-regular, serif;
+  line-height: 23px;
+}
+
+:host:not(.isSelected):hover{
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.09);
+}
+

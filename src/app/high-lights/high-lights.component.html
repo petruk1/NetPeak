@@ -1,11 +1,15 @@
-<div class="tabs-container">
-  <app-tab  *ngFor="let tab of tabs" [tabData]="tab"
-            [class.isSelected]="tab===selectedTab"
-            (click)="selectedTab=tab"></app-tab>
+<div class="row">
+  <div class="tabs-container
+col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+    <app-tab *ngFor="let tab of tabs" [tabData]="tab"
+             [class.isSelected]="tab===selectedTab"
+             (click)="selectedTab=tab">
 
-</div>
-<div class="tablet">
-  <div class="tablet-img-placeholder">
-    <img src="{{selectedTab?.image}}" alt="tablet">
+    </app-tab>
+  </div>
+  <div class="tablet col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+    <div class="tablet-img-placeholder">
+      <img src="{{selectedTab?.image}}" alt="tablet">
+    </div>
   </div>
 </div>

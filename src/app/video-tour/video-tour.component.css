@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 113px 135px;
+  padding: 113px 9%;
   background: url('../../assets/images/Video-Tour-Background.png') center;
   background-size: 100% 100%;
   color: white;
+  text-align: center;
 }
 
 .title {
@@ -21,7 +22,8 @@
 
 .description {
   text-align: center;
-  width: 600px;
+  max-width: 600px;
+  min-width: 200px;
   font-family: nunito-regular, serif;
   margin-bottom: 21px;
   font-size: 16px;

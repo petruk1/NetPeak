@@ -3,13 +3,19 @@
   justify-content: space-between;
   background-color: rgb(248, 249, 250);
   align-items: center;
-  padding: 121px 135px;
+  padding: 121px 9%;
 }
 
 .tabs-container {
   display: flex;
   flex-direction: column;
   flex: 1.4;
+}
+
+div.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .isSelected {
@@ -28,6 +34,15 @@
   background-size: 470px 708px;
   min-width: 470px;
   min-height: 708px;
+}
+
+@media (max-width: 600px) {
+  .tablet {
+    zoom: 0.5;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .tablet-img-placeholder img {

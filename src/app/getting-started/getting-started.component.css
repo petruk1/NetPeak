@@ -1,26 +1,23 @@
 :host {
   display: flex;
-  padding: 73px 135px 80px 135px;
+  justify-content: center;
+  padding: 73px 9% 80px 9%;
   background: url('../../assets/images/Header-Background.png') no-repeat;
-  background-size: 100% 500px;
+  background-size: 100% 600px;
   color: white;
 }
 
-.text-content {
-  flex: 1.2;
-}
-
-.text-content-title {
+.title {
   font-family: nunito-light, serif;
   font-weight: normal;
   margin-bottom: 17px;
 }
 
-.text-content-title span {
+.title span {
   font-family: nunito-extra-bold, serif;
 }
 
-.text-content-description {
+.description {
   font-family: nunito-regular, serif;
   line-height: 30px;
 }
@@ -37,18 +34,23 @@
   padding: 15px 40px;
   font-family: nunito-bold, serif;
   cursor: pointer;
-  height: 50px;
+  min-height: 50px;
   border-radius: 6px;
   background-color: #ffffff;
   box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
 }
 
 .actions button:first-child {
-  width: 170px;
-  height: 50px;
+  max-width: 170px;
   border-radius: 6px;
   background-image: linear-gradient(106deg, #ff8e64, #ffe641);
   box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
   margin-right: 20px;
   color: white;
+}
+
+@media (max-width: 900px) {
+  .title {
+    text-align: center;
+  }
 }

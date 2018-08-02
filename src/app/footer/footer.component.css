@@ -1,8 +1,11 @@
 :host {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 135px;
+  padding: 40px 9%;
+  flex-wrap: wrap;
+}
+
+div.row {
+  width: 100%;
 }
 
 .text-logo {
@@ -21,6 +24,7 @@
   flex-direction: column;
   align-items: center;
   color: darkgray;
+  text-align: center;
 }
 
 .author p {
@@ -35,7 +39,8 @@
 
 .socials {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .twitter {
@@ -57,4 +62,25 @@
   border-radius: 0 5px 5px 0;
   padding: 11px 10px 10px;
   cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  :host {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-logo {
+    text-align: center;
+  }
+
+  .author {
+    justify-content: center;
+  }
+
+  .socials {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
 }
